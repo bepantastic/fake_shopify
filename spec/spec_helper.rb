@@ -20,8 +20,8 @@ RSpec.configure do |config|
 end
 
 # Activate Shopify API
-ShopifyAPI::Base.api_version = '2019-04'
-session = ShopifyAPI::Session.new(domain: "domain", token: "randomtoken", api_version: "2019-04")
+ShopifyAPI::Base.api_version = '2020-04'
+session = ShopifyAPI::Session.new(domain: "domain", token: "randomtoken", api_version: "2020-04")
 ShopifyAPI::Base.activate_session(session)
 
 # Do not announce that capybara is starting puma
