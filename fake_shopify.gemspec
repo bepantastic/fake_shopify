@@ -3,12 +3,12 @@ require_relative "lib/fake_shopify/version"
 Gem::Specification.new do |spec|
   spec.name          = "fake_shopify"
   spec.version       = FakeShopify::VERSION
-  spec.authors       = ["colinsoleim"]
-  spec.email         = ["soleimc@gmail.com"]
+  spec.authors       = ["ckelly", "colinsoleim"]
+  spec.email         = ["chris@pantastic.com", "soleimc@gmail.com"]
   spec.summary       = "An unofficial implementation of the Shopify API service for testing purposes."
-  spec.homepage      = "https://github.com/colinsoleim/fake_shopify"
+  spec.homepage      = "https://github.com/bepantastic/fake_shopify"
   spec.license       = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.6")
 
   spec.files = Dir["{lib}/**/*"] + ["Rakefile", "README.md"]
 
