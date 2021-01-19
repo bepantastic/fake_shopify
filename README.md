@@ -1,6 +1,6 @@
 # FakeShopify
 
-This gem provides a way to test a Shopify app without hitting Shopify's servers. It uses [Webmock](https://github.com/bblimke/webmock) to intercept all of the calls from Shopify's Ruby API library and returns JSON fixtures from Shopify's example documentation. The gem's design borrows heavily from thoughtbot's [FakeStripe](https://github.com/thoughtbot/fake_stripe) gem. 
+This gem provides a way to test a Shopify app without hitting Shopify's servers. It uses [Webmock](https://github.com/bblimke/webmock) to intercept all of the calls from Shopify's Ruby API library and returns JSON fixtures from Shopify's example documentation. The gem's design borrows heavily from thoughtbot's [FakeStripe](https://github.com/thoughtbot/fake_stripe) gem.
 
 ## Installation
 
@@ -39,12 +39,14 @@ Then start a ShopiyAPI::Session with the following values:
     session = ShopifyAPI::Session.new(
       domain: 'domain',
       token: 'foobar',
-      api_version: '2019-04',
+      api_version: '2020-04',
     )
     ShopifyAPI::Base.activate_session(session)
 ```
 
-For now, these exact values for `domain` and `api_version` are required.
+The exact value for `domain` is required.
+
+`api_version` can be updated to match your shopify api version, up to `2020-07`
 
 ## Development Roadmap
 
